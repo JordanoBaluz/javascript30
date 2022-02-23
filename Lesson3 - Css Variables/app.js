@@ -1,10 +1,10 @@
 const inputs = document.querySelectorAll('.controls input');
 
 function handleUpdate(){
-    console.log(this.value);
     //dataset objeto que contem todos os atributos do elemento que no caso e px no data-sizing
     const suffix = this.dataset.sizing || '';
 
+        
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
 }
 

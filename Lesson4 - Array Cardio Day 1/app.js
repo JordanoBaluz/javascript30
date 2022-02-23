@@ -29,3 +29,10 @@ const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.
 
 console.table(fifteen);
 
+//array.prototype.map
+//2. give an array inventory first and last name
+
+const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+
+console.log(fullNames);
+

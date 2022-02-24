@@ -36,3 +36,17 @@ const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`
 
 console.log(fullNames);
 
+//array.prototype.sort
+//3. sort the inventors by birthday, oldest and youngest
+
+const ordered = inventors.sort(function(a,b){
+    if(a.year > b.year){
+        return 1;
+    }else {
+        return -1;
+    }
+});
+
+const orderedTern = inventors.sort((a,b) => a.year > b.year? 1 : -1);
+
+console.table(orderedTern);

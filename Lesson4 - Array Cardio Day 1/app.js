@@ -50,3 +50,11 @@ const ordered = inventors.sort(function(a,b){
 const orderedTern = inventors.sort((a,b) => a.year > b.year? 1 : -1);
 
 console.table(orderedTern);
+
+//array.prototype.reduce
+//4. how many years all invetors live
+const totalYears = inventors.reduce((total, inventor) => {
+    return total + (inventor.passed - inventor.year);
+}, 0);
+
+console.log(totalYears);

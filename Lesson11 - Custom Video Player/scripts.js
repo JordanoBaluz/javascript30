@@ -7,7 +7,7 @@ const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 //get the prop data-skip from the button
 const skipButton = player.querySelectorAll('[data-skip]');
-const ranges = player.querySelectorAll('.player_slider');
+const ranges = player.querySelectorAll('.player__slider');
 
 /*build the functions*/
 function tooglePlay() {

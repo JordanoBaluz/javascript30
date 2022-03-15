@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+
+/*centraliza o conteudo na tela do navegador*/
+
+.site-wrap {
+    max-width: 45rem;
+    margin: 6rem auto;
+    background: white;
+    padding: 2.5rem;
+    text-align: justify;
+}
+
+
+/*alinha as imagens a esquerda e direita em relação ao texto*/
+
+.align-left {
+    float: left;
+    margin-right: 1.25rem;
+}
+
+.align-right {
+    float: right;
+    margin-left: 1.25rem;
+}
+
+
+/*irá mover as imagens quando der scroll na pagina*/
+
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
